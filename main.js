@@ -6,13 +6,27 @@ let p1=document.getElementById("item")
 p1.style.fontWeight = "bold";
 
 
-document.getElementsByTagName("img")[0];
-img.src = "woman.png";
-img.style.height = "50px";
+let img = document.getElementsByTagName("img")[0];
+img.src = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg";
+
+img.style.height="100px"
+
+let ul = document.querySelector("#items");
+
+let list1 = document.createElement('li');
+let list2 = document.createElement('li');
+let list3 = document.createElement('li');
+list1.innerText = "li1";
+list2.innerText = "li2";
+list3.innerText = "li3";
+
+ul.appendChild(list1);
+ul.appendChild(list2);
+ul.appendChild(list3);
+ul.style.display = "flex";
 
 
-let list = document.querySelector('.horizontal-list');
-let items = ['item 1', 'item 2', 'item 3'];
 
 
-let table = document.getElementById("myTable");
+
+
