@@ -35,10 +35,10 @@ let cols = 3;
 
 for (let i = 1; i <= rows; i++) {
     let tr = document.createElement("tr");
-    let rowContent = `row ${i}`;
+    let rowContent = `data ${i}`;
     for (let j = 1; j <= cols; j++) {
         let td = document.createElement("td");
-        td.textContent = `${rowContent} - col ${j}`; // نص العمود
+        td.textContent = `${rowContent} - data ${j}`; 
         tr.appendChild(td);
     }
     table.appendChild(tr);
