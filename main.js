@@ -27,6 +27,27 @@ ul.style.display = "flex";
 
 
 
+let table = document.createElement("table");
+table.classList.add("my-table");
+
+let rows = 2;
+let cols = 3;
+
+for (let i = 1; i <= rows; i++) {
+    let tr = document.createElement("tr");
+    let rowContent = `row ${i}`;
+    for (let j = 1; j <= cols; j++) {
+        let td = document.createElement("td");
+        td.textContent = `${rowContent} - col ${j}`; // نص العمود
+        tr.appendChild(td);
+    }
+    table.appendChild(tr);
+}
+
+document.body.appendChild(table);
+
+
+
 
 
 
